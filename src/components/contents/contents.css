@@ -1,0 +1,42 @@
+.cover-letter, .contact-info, .projects{
+    text-align: justify;
+}
+
+Table, .contact-info, .projects{
+    padding: 50px 0px;
+}
+
+
+.contact-info{
+    font-size: 0.9rem;
+    line-height: 1.6rem;
+}
+
+.Alert-Heading{
+    text-align:left;
+}
+
+.sub-header{
+    padding: 5px 0px;
+}
+
+.project{
+    border-bottom: dashed thin grey;
+}
+
+.home-content{
+    background: url("./background.jpg") transparent no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    opacity: 0.4;
+}
+
+.image{
+    position: absolute;
+    /* left: 50%; */
+    top:100px;
+    /* transform: translateX(-50%); */
+}
+.home-wrapper{
+    background-color: #0A3E66;
+}
