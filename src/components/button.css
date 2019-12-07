@@ -1,13 +1,14 @@
 .toggle-button{
     cursor: pointer;
     margin-left: 10px;
+    margin-top: 13px;
     display: flex;
     flex-direction: column;
     background: transparent;
     border: none;
     box-sizing: border-box;
- 
 }
+
 .toggle-button:focus{
     outline: none;
 }
@@ -17,4 +18,15 @@
     width: 25px;
     margin: 3px 0px;
     background: white;
+}
+
+.menu-nav-xs{
+    min-height : 50px;
+    background-color: #0A3E66;
+}
+
+@media(min-width:768px){
+    .menu-nav-xs{
+        display: none;
+    }
 }

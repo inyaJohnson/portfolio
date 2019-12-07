@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './sidebar.css'
 
 export const Sidebar = (props) => {
@@ -11,23 +11,24 @@ export const Sidebar = (props) => {
         <nav className={sidebarClass}>
             <ul>
                 <li>
-                    <Link to='/'>Home</Link>
+                    <NavLink exact={true} to='/'>HOME</NavLink>
                 </li>
 
                 <li>
-                    <Link to='/contents/education'>Education</Link>
+                    <NavLink activeClassName = "is-active" to='/about'>ABOUT</NavLink>
+                </li>
+
+                <li>
+                    <NavLink activeClassName = "is-active" to='/education'>EDUCATION</NavLink>
                 </li>
                 <li>
-                    <Link to='/contents/experience'>Experience</Link>
-                </li>
-                {/* <li>
-                    <Link to = '/contents/github'>Contact/Git-Repo</Link>
-                </li> */}
-                <li>
-                    <Link to='/contents/projects'>Projects</Link>
+                    <NavLink activeClassName = "is-active" to='/experience'>EXPERIENCE</NavLink>
                 </li>
                 <li>
-                    <Link to='/contents/skills'>Skills</Link>
+                    <NavLink activeClassName = "is-active" to='/projects'>PROJECTS</NavLink>
+                </li>
+                <li>
+                    <NavLink activeClassName = "is-active" to='/skills'>SKILLS</NavLink>
                 </li>
             </ul>
         </nav>

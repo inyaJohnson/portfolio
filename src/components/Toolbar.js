@@ -1,6 +1,7 @@
 import React from 'react';  
 import './toolbar.css';
-import {NavLink} from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+
 export const Toolbar = (props) =>
 (
  <div className='toolbar'>

@@ -31,11 +31,18 @@
     background-size: cover;
     min-height: 100vh;
     opacity: 0.4;
-
+    
 }
 
 .intro-img{
     border: solid thick #0A3E66;
+    -webkit-transition: width 2s, height 2s; /* For Safari 3.1 to 6.0 */
+    transition: width 2s, height 2s;
+}
+
+.intro-img:hover{
+    width: 220px;
+    height: 220px;
 }
 
 .intro-info{
@@ -173,6 +180,13 @@ th{
 
     .intro-info h5{
         font-size: 15px;
+    }
+
+    .about-photo{
+        display: flex;
+        padding-top: 0px;
+        margin-bottom: 30px;
+        justify-content: center;
     }
     
 }
