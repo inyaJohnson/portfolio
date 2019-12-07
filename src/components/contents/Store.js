@@ -8,33 +8,47 @@ class Store extends Component{
         this.data = {
             education : [
                 {
-                    'degree':'B.Eng. Bachelor of Engineering in Electronic and Computer Engineering, SECOND CLASS UPPER DIVISION.',
-                    'institution':'Federal University of Technology, Owerri.',
+                    'degree':'B.Eng. Bachelor of Engineering.',
+                    'detail': '2nd Class Honors, Upper Division in Electronics and Computer Engineering.',
+                    'institution':'FEDERAL UNIVERSITY OF TECHNOLOGY, OWERRI.',
                     'year': '2012 -2017'
                 },
                 {
                     'degree':'WAEC/SSCE',
-                    'institution':'Science and Art Specialist College.',
+                    'detail': 'Senior School Certificate Exams - Distinctions in WAEC and NECO Exams.',
+                    'institution':'SCIENCE AND ARTS SPECIALIST COLLEGE.',
                     'year': '2005 - 2011'
+                },
+                {
+                    'degree':'FSLC',
+                    'detail': 'Senior School Certificate Exams - Distinctions in WAEC and NECO Exams.',
+                    'institution':`ARMY CHILDRENS' SCHOOL`,
+                    'year': '1994 - 2005'
                 }
             ],
 
             experience: [
                 {
+                    'organisation' : 'September 2018 – Present: Banodex International Limited',
+                    'position': 'Software Developer',
+                    'task': [
+                        'Development and deployment of Customer Relational Management system',
+                        'Built a fully functional web site. Fibrehub.com.ng',
+                        'Maintenance, development and deployment of new features on Banodex and Fibrehub platforms',
+                        'Maintenance and Documentation PHP/LARAVEL base API using Postman, also deployment of Node/Express API.',
+                        'Ensuring Application security as well as rapid deployment of bug fix',
+                        'Mentorship of interns on application development best practices.'
+                    ]   
+                },
+
+                {
                     'organisation' : 'September 2017 – 2018: Science and Arts Specialist College',
                     'position': 'Computer Science Instructor',
                     'task': [
                         'Assisted students in connecting computer science, math and technological principles to every day life.',
-                        'Provided student progress feedback on a regular basis.'
+                        'Provided student progress feedback on a regular basis.',
+                        'Practical deployment and maintenance of Bus and Star network topology in school studio'
                     ]
-                },
-                {
-                    'organisation' : 'September 2018 – Present: Banodex International Limited',
-                    'position': 'Software Developer',
-                    'task': [
-                        'Built a fully functional web site. Fibrehub.com.ng',
-                        'Built a fully functional data storage and job progress software.'
-                    ]   
                 }
             ],
             project: [
@@ -56,7 +70,7 @@ class Store extends Component{
                     'description':{
                         'about':`The Touch Core website is a platform for air travel ticket booking, Its two pages website.
                         On the index page customers search for flights by putting in their departure city, destinations city, date of 
-                        Departure and/or date of arrival, and also specifying the number of passengers if not one. Then validtion of cumtomer input parameters is carried out at 
+                        Departure and/or date of arrival, and also specifying the number of passengers if not one. Then validtion of customer input parameters is carried out at 
                         the backend and if the data is valid, and flight(s) is/are avaliable, a list of flight(s) with travel 
                         time and price is displayed. In a case where input is invalid or flight is not avaliable, the customer is 
                         also notified.`,
@@ -85,25 +99,40 @@ class Store extends Component{
 
             skills:[
                 {
-                   'title': 'Front End Technologies',
-                   'description' : 'HTML5, XML, CSS3, JavaScript/JQuery, JSON, Ajax, Bootstrap, React, Redux.' 
+                   'title': 'Structure',
+                   'description' : 'HTML5, XML',
+                   'strength': '80',
+                   'experience': '3 years'
                 },
+
                 {
-                    'title':'Back End Technologies',
-                    'description':'PHP/Laravel'
+                    'title' :'presentation',
+                    'description': 'CSS3, Bootstrap',
+                    'strength': '65',
+                    'experience': '3 years'
                 },
+
                 {
-                    'title':'Tools',
-                    'description':'PHPStorm, Visual Studio Code, Notepad++, Lucid Chart and Git.'
+                    'title' : 'javascript',
+                    'description': 'Vallina JavaScript, JQuery, JSON, Ajax,  React, Redux',
+                    'strength': '70',
+                    'experience': '1 year 6months'
                 },
+
+                {
+                    'title':'PHP',
+                    'description':'PHP/Laravel',
+                    'strength': '75',
+                    'experience': '2 years'
+                },
+
                 {
                     'title':'Databases/ORM',
-                    'description':'MySQL, Eloquent.'
-                },
-                {
-                    'title':'Design Skills',
-                    'description':'Procedural	Programming,	Object Oriented Programming.'
-                },   
+                    'description':'MySQL, Postgresql, MonogoDB, Eloquent',
+                    'strength': '80',
+                    'experience': '2 years'
+
+                }
             ]
             
         }

@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import {Toolbar} from './Toolbar';
-import { Sidebar } from './Sidebar';
-import {Backdrop} from './Backdrop';
-import {Container, Row, Col} from 'react-bootstrap';
+import { Toolbar } from './Toolbar';
+// import { Sidebar } from './Sidebar';
+// import {Backdrop} from './Backdrop';
+import { Container, Row, Col } from 'react-bootstrap';
+
 
 class Layout extends Component{
   // state = {
@@ -36,16 +37,16 @@ class Layout extends Component{
   //   );
   const { children } = this.props;
   return(
-    <div className= 'App'>
+    <Container fluid className= 'App'>
         <Row>
-          <Col md={3} className='menu-nav' >
+          <Col md={{span:3}} className='menu-nav' >
             <Toolbar />
           </Col>
           <Col md={{offset:3, span:9}} className='children'>
-            {children}
+            {children} 
           </Col>
         </Row>    
-    </div>
+    </Container>
   )
   }
 }

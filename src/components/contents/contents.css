@@ -1,15 +1,13 @@
-.cover-letter, .contact-info, .projects{
+.education, .about, .experience, .projects, .skills{
+    padding: 50px;
+}
+
+.header{
+    margin-bottom: 30px;
+}
+
+.projects{
     text-align: justify;
-}
-
-Table, .contact-info, .projects{
-    padding: 50px 0px;
-}
-
-
-.contact-info{
-    font-size: 0.9rem;
-    line-height: 1.6rem;
 }
 
 .Alert-Heading{
@@ -24,19 +22,157 @@ Table, .contact-info, .projects{
     border-bottom: dashed thin grey;
 }
 
-.home-content{
-    background: url("./background.jpg") transparent no-repeat center;
-    background-size: cover;
-    height: 100vh;
-    opacity: 0.4;
+.intro-wrapper{
+    background-color: #0A3E66;
 }
 
-.image{
-    position: absolute;
-    /* left: 50%; */
-    top:100px;
-    /* transform: translateX(-50%); */
+.intro-background{
+    background: url("./background.jpg") transparent no-repeat center;
+    background-size: cover;
+    min-height: 100vh;
+    opacity: 0.4;
+
 }
-.home-wrapper{
+
+.intro-img{
+    border: solid thick #0A3E66;
+}
+
+.intro-info{
+    position: absolute;
+    color: white;
+    top:150px;
+    left: 50%;
+    transform:translateX(-50%);
+    text-align: center;
+}
+
+.intro-info h1{
+    font-weight: bolder;
+    letter-spacing: 0.4rem;
+}
+
+.intro-info span{
+    color: orange;
+}
+
+.children{
+    padding: 0;
+}
+
+.photo{
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+    box-shadow: 10px 20px 5px #0A3E66;
+    -webkit-transition: width 2s, height 2s; /* For Safari 3.1 to 6.0 */
+    transition: width 2s, height 2s;
+}
+
+.photo:hover{
+    width: 320px;
+    height: 320px;
+}
+
+.about-photo{
+    padding-top: 30px;
+}
+
+
+
+.about-detail{
+    text-align: justify;
+}
+
+.about-name{
+    font-weight: bold;
+    color: orange;
+}
+
+.contact{
+    margin: 10px 0px;
+    padding: 20px 0px;
+}
+
+.contact-info{
+    padding-top: 10px;
+}
+
+.contact-info .links{
+    color: #0A3E66;
+}
+
+
+.download-button{
+    background-color: orange;
+    border: none;
+}
+
+.download-button:hover{
     background-color: #0A3E66;
+}
+
+.progress-bar{
+    background-color: #0A3E66;
+}
+
+.skill{
+    margin-bottom: 15px ;
+}
+
+ .skill-detail{
+    text-align: justify;
+}
+
+.skill-strength{
+    display: flex;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+.skill-description{
+    flex-grow: 1;
+}
+
+
+th{
+    background-color:#0A3E66;
+    color: white;
+}
+
+
+.education div{
+    padding-bottom: 20px;
+}
+
+.education .detail{
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.school {
+    display: flex;
+}
+
+.school h5{
+    flex-grow: 1;
+    font-weight: bold;
+}
+
+.school small{
+    font-size: 0.9rem;
+}
+
+
+/* MEDIA QUERIES */
+
+@media(max-width:768px){
+    .intro-info h1{
+        font-size: 25px;
+        letter-spacing: 0.1rem;
+    }
+
+    .intro-info h5{
+        font-size: 15px;
+    }
+    
 }

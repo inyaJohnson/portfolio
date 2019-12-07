@@ -1,42 +1,44 @@
 import React from 'react';  
-import {Row, Col, Image} from 'react-bootstrap';
-import Profile from './contents/profile-image.jpg'
 import './toolbar.css';
-import {Link} from 'react-router-dom';
+import {NavLink} from 'react-router-dom';
 export const Toolbar = (props) =>
 (
- <div  className='toolbar'>
+ <div className='toolbar'>
     <div className='toolbar-navigation'>
-        <Row className='toolbar-initials'>
-            <Col xs={{span:12}} className="d-flex justify-content-center">
+        <div className='toolbar-initials'>
+            <div className="d-flex justify-content-center">
                 <h1>IJ</h1>
-            </Col>
-            <Col>
-                    <div className ='toolbar-name'>INYA JOHNSON TOCHUKWU</div>
+            </div>
+            <div>
+                    <div className ='toolbar-name'>INYA JOHNSON </div>
                     <div className ='toolbar-title'>FULL STACK WEB DEVELOPER</div>
-            </Col>
-        </Row>
+            </div>
+        </div>
 
-        <Row className='toolbar-navigation-items'>
+        <nav className='toolbar-navigation-items'>
             <ul>
                 <li>
-                    <Link to='/'>Home</Link>
+                    <NavLink exact={true} to='/'>HOME</NavLink>
                 </li>
 
                 <li>
-                    <Link to='/contents/education'>Education</Link>
+                    <NavLink activeClassName = "is-active" to='/about'>ABOUT</NavLink>
+                </li>
+
+                <li>
+                    <NavLink activeClassName = "is-active" to='/education'>EDUCATION</NavLink>
                 </li>
                 <li>
-                    <Link to='/contents/experience'>Experience</Link>
+                    <NavLink activeClassName = "is-active" to='/experience'>EXPERIENCE</NavLink>
                 </li>
                 <li>
-                    <Link to='/contents/projects'>Projects</Link>
+                    <NavLink activeClassName = "is-active" to='/projects'>PROJECTS</NavLink>
                 </li>
                 <li>
-                    <Link to='/contents/skills'>Skills</Link>
+                    <NavLink activeClassName = "is-active" to='/skills'>SKILLS</NavLink>
                 </li>
             </ul>
-        </Row>
+        </nav>
     </div>
 </div>
 );

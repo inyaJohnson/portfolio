@@ -10,10 +10,9 @@
     height: 100vh;
     position: fixed;
     padding: 0;
+    margin: 0;
 }
-.children{
-    padding: 0;
-}
+
 
 .toolbar-initials{
     margin: 70px 0px;
@@ -60,8 +59,8 @@
 } 
 
 .toolbar-navigation-items li{
-    margin: 3px;
-    font-size: 1.2em;
+    margin: 5px;
+    /* font-size: 1.1em; */
     
 }
 
@@ -76,9 +75,16 @@
 }
 
 
-
-@media(max-width:992px){
-    .toolbar-navigation-items{
-        display: none;
-    }
+li .is-active {
+    color: orange ; 
 }
+
+@media(max-width:768px){
+    /* .toolbar-navigation-items{
+        display: none;
+    } */
+
+     .menu-nav{
+        display: none;
+    } 
+} 
