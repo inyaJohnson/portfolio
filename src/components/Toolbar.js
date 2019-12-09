@@ -1,6 +1,11 @@
 import React from 'react';  
 import './toolbar.css';
 import { NavLink } from 'react-router-dom';
+import { Alert, Image } from 'react-bootstrap';
+import Linkedin from './svg/linkedin.svg';
+import Facebook from './svg/facebook.svg';
+import Github from './svg/github.svg';
+
 
 export const Toolbar = (props) =>
 (
@@ -40,6 +45,12 @@ export const Toolbar = (props) =>
                 </li>
             </ul>
         </nav>
+
+        <div className='link'>
+                <Alert.Link href='https://www.facebook.com/tujailer' target='_blank' rel='noopener noreferrer' ><Image src={Facebook} className='link-img' alt='facebook' /></Alert.Link>
+                <Alert.Link href='https://github.com/inyaJohnson/' target='_blank' rel='noopener noreferrer'><Image src={Github} className='link-img' alt='github' /></Alert.Link>
+                <Alert.Link href='https://www.linkedin.com/in/johnson-inya-07099814a' target='_blank' rel='noopener noreferrer'><Image src={Linkedin} className='link-img' alt='linkedin' /></Alert.Link>
+            </div>
     </div>
 </div>
 );

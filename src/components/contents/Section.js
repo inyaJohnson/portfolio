@@ -5,6 +5,7 @@ import Photo from './photo.jpg';
 import './contents.css';
 import myData from './Store';
 import Layout from '../Layout';
+import Cv from './inya_johnson.pdf';
 
 export const Intro = () =>{
     return(
@@ -75,7 +76,7 @@ export const About = () => {
                         </div>
 
                         <div>
-                            <Alert.Link href="#" rel="noreferrer noopener" target="_blank">
+                            <Alert.Link href={Cv} rel="noreferrer noopener" target="_blank" download="Johnson's resume" >
                                 <Button className="download-button">Download CV</Button>
                             </Alert.Link>
                         </div>
@@ -168,8 +169,8 @@ export const Projects = () =>{
                                     <div className="sub-header"><strong>Technology</strong> - {index.description.technology}</div>
                                     <div className="sub-header"><strong>Duration</strong> - {index.description.time}</div>
                                 </div>
-                                <Alert.Link href={index.link} rel="noreferrer noopener" target="_blank" className="d-flex justify-content-end" >
-                                    <Button variant="secondary">View Project</Button>
+                                <Alert.Link href={index.link} rel="noreferrer noopener" target="_blank"  >
+                                    <Button className='project-button'>View Project</Button>
                                 </Alert.Link>
                             </Alert>
                         </div>

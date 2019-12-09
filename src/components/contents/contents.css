@@ -22,6 +22,10 @@
     border-bottom: dashed thin grey;
 }
 
+.project-button{
+    width: auto;
+}
+
 .intro-wrapper{
     background-color: #0A3E66;
 }
@@ -30,7 +34,7 @@
     background: url("./background.jpg") transparent no-repeat center;
     background-size: cover;
     min-height: 100vh;
-    opacity: 0.4;
+    opacity: 0.5;
     
 }
 
@@ -84,8 +88,6 @@
     padding-top: 30px;
 }
 
-
-
 .about-detail{
     text-align: justify;
 }
@@ -108,15 +110,15 @@
     color: #0A3E66;
 }
 
-
-.download-button{
+.download-button, .project-button{
     background-color: orange;
     border: none;
 }
 
-.download-button:hover{
+.download-button:hover, .project-button:hover{
     background-color: #0A3E66;
 }
+
 
 .progress-bar{
     background-color: #0A3E66;

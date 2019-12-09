@@ -24,6 +24,23 @@
     min-height : 50px;
     background-color: #0A3E66;
 }
+/* 
+.link{
+    display: flex;
+} */
+
+.btn{
+    flex-grow: 1;
+}
+
+.link-img{
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.xs-nav{
+    display: flex;
+} 
 
 @media(min-width:768px){
     .menu-nav-xs{
