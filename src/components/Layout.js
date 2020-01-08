@@ -23,20 +23,6 @@ class Layout extends Component{
   }
 
   render(){
-  //   let backdrop;
-  //   if(this.state.openSideBar){
-  //     backdrop = <Backdrop backdropClick = {this.onBackdropClickHandler}/>
-  //   }
-  //   const { children } = this.props;
-  //   return (
-  //     <div className="App" >
-  //       <Toolbar  sidebarClick = {this.onSidebarClickHandler}/>
-  //       <Sidebar showSidebar = {this.state.openSideBar}/>
-  //       {backdrop}
-  //       {children}
-  //     </div>
-  //   );
-
   let backdrop;
     if(this.state.openSideBar){
       backdrop = <Backdrop backdropClick = {this.onBackdropClickHandler}/>

@@ -38,13 +38,13 @@ export const About = () => {
                     </Col>
                     <Col md={7} className="about-detail">
                         <div>
-                            Hello! <span className="about-name">Inya Johnson</span> is my name, a very passionate and dedicated Full Stack Developer. 
-                            With almost 2 years experience as a professional developer, 
-                            I have being exposed to a wide variety of technology in my career, 
-                            and have acquired skills and knowledge necessary to make your project a success. 
-                            I enjoy every step of the design process, from discussion and collaboration to concept and execution,
-                            but I find the most satisfaction in seeing the finished product do everything for you that it was created to do and
-                            delivered on time.
+                            Hello! my name is <span className="about-name">Inya Johnson</span>. I am a passionate and dedicated 
+                            Full Stack Software developer. With about 2 years experience as a professional Software developer, 
+                            I have being exposed to a wide range of technology in my career, and have acquired relevant skills 
+                            and knowledge necessary to take a software project from concept to realization. 
+                            I enjoy every step of the design process; from requirement gathering to system design, development and deployment. 
+                            I find the most satisfaction in getting the finished product accomplish it's core requirements and 
+                            also ensuring timely delivery. Let me know how I can be of help in your next software project.
                         </div>
                         <div className="contact">
                             <Row>
@@ -97,8 +97,8 @@ export const Education = () => {
                         education.map((index, key) => 
                         <div className='level' key = {key}>
                             <div className='school'><h5>{index.institution}</h5><small>{index.year}</small></div>
-                            <div className='detail'>{index.degree}</div>
-                            <div>{index.detail}</div>
+                            <div className='degree'>{index.degree}</div>
+                            <div className ='detail' >{index.detail}</div>
                         </div>
                         )
                     }
@@ -200,8 +200,7 @@ export const Skills = () => {
                             Object Oriented Programming.
                         </div>
                     </Col>
-                    <Col md={7} className="skill-detail">
-                         
+                    <Col md={7} className="skill-detail">   
                         {
                             skills.map((index, key) =>
                             <Row className="skill" key={key}>

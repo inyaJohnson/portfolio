@@ -1,6 +1,7 @@
 {
   "name": "portfoliov2",
   "version": "0.1.0",
+  "homepage": "https://intoajohnson.com",
   "private": true,
   "dependencies": {
     "bootstrap": "^4.4.1",

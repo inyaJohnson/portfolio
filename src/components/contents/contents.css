@@ -149,8 +149,12 @@ th{
 }
 
 
-.education div{
-    padding-bottom: 20px;
+ .education .detail{
+    padding-bottom: 30px;
+}
+
+.education .school, .education .degree{
+    padding-bottom: 5px; 
 }
 
 .education .detail{
@@ -189,6 +193,11 @@ th{
         padding-top: 0px;
         margin-bottom: 30px;
         justify-content: center;
+    }
+
+    .skill-detail{
+        text-align: justify;
+        margin-top: 30px;
     }
     
 }
